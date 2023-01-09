@@ -53,7 +53,7 @@ public class ProjectController {
 	@PatchMapping("/projects/{ProjectId}")
 	public ResponseEntity<Object> updateProject(
 			@Parameter(description = PayloadExample.updateProject) @RequestBody Object project,
-			@Parameter(description = PayloadExample.updateProjectId) @PathVariable("ProjectId") String PersonId) {
+			@Parameter(description = "300000008308413") @PathVariable("ProjectId") String PersonId) {
 		return projectService.updateProject(PersonId, project);
 	}
 

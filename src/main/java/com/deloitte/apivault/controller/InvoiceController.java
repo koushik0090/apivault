@@ -71,7 +71,7 @@ public class InvoiceController {
 	// get invoice by invoice Id
 	@GetMapping("/invoices/{invoicesUniqID}")
 	public ResponseEntity<Object> getInvoiceById(
-			@Parameter(description = PayloadExample.getInvoiceById) @PathVariable("invoicesUniqID") String invoicesUniqID) {
+			@Parameter(description = "300000011998916") @PathVariable("invoicesUniqID") String invoicesUniqID) {
 		return invoiceService.getInvoiceById(invoicesUniqID);
 	}
 
@@ -79,7 +79,7 @@ public class InvoiceController {
 	@PatchMapping("/invoices/{invoicesUniqID}")
 	public ResponseEntity<Object> updateInvoice(
 			@Parameter(description = PayloadExample.updateInvoice) @RequestBody Object invoice,
-			@Parameter(description = PayloadExample.updateInvoiceById) @PathVariable("invoicesUniqID") String invoicesUniqID) {
+			@Parameter(description = "300000011998916") @PathVariable("invoicesUniqID") String invoicesUniqID) {
 		return invoiceService.updateInvoice(invoicesUniqID, invoice);
 	}
 
@@ -99,7 +99,7 @@ public class InvoiceController {
 	// get invoice by invoice Id
 	@GetMapping("/receivableInvoice/{invoicesUniqID}")
 	public ResponseEntity<Object> getReceivableInvoiceById(
-			@Parameter(description = PayloadExample.getInvoiceById) @PathVariable("invoicesUniqID") String invoicesUniqID) {
+			@Parameter(description = "225206") @PathVariable("invoicesUniqID") String invoicesUniqID) {
 		return receivableInvoice.getInvoiceById(invoicesUniqID);
 	}
 
@@ -107,14 +107,14 @@ public class InvoiceController {
 	@PatchMapping("/receivableInvoice/{invoicesUniqID}")
 	public ResponseEntity<Object> updateReceivableInvoice(
 			@Parameter(description = PayloadExample.updateInvoice) @RequestBody Object invoice,
-			@Parameter(description = PayloadExample.updateInvoiceById) @PathVariable("invoicesUniqID") String invoicesUniqID) {
+			@Parameter(description = "225088") @PathVariable("invoicesUniqID") String invoicesUniqID) {
 		return receivableInvoice.updateInvoice(invoicesUniqID, invoice);
 	}
 
 	// get invoice by invoice Id
 	@DeleteMapping("/receivableInvoice/{invoicesUniqID}")
 	public ResponseEntity<Object> deleteReceivableInvoiceById(
-			@Parameter(description = PayloadExample.deleteReceivableInvoiceById) @PathVariable("invoicesUniqID") String invoicesUniqID) {
+			@Parameter(description = "225086") @PathVariable("invoicesUniqID") String invoicesUniqID) {
 		return receivableInvoice.deleteInvoiceById(invoicesUniqID);
 	}
 

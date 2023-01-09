@@ -77,7 +77,7 @@ public class CustomerAccountService {
 		logger.debug(host + getbyid);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + getall, PartyNumber).retrieve().toEntity(Object.class).block();
+			response = this.webClient.get().uri(host + getbyid, PartyNumber).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in getCustAccountByPartyNumber");
@@ -134,7 +134,7 @@ public class CustomerAccountService {
 		logger.debug(host + delete);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + delete, PartyNumber).retrieve().toEntity(Object.class).block();
+			response = this.webClient.delete().uri(host + delete, PartyNumber).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in deleteCustAccountByPartyNumber");

@@ -28,7 +28,7 @@ public class SalesOrderController {
 	}
 	
 	@GetMapping("/salesOrdersForOrderHub/{OrderKey}")
-	public ResponseEntity<Object> getSaleOrderByOrderKey(@Parameter(description = "e.g : 123") @PathVariable("OrderKey") String OrderKey)
+	public ResponseEntity<Object> getSaleOrderByOrderKey(@Parameter(description = "e.g : 300000003225357") @PathVariable("OrderKey") String OrderKey)
 	{
 		return SalesOrderService.getSaleOrderByOrderKey(OrderKey);
 	}
@@ -41,7 +41,7 @@ public class SalesOrderController {
 
 	@PatchMapping("/salesOrdersForOrderHub/{OrderKey}")
 	public ResponseEntity<Object> updateSaleOrder(
-			@Parameter(description = "e.g : 123") @PathVariable("OrderKey") String OrderKey,
+			@Parameter(description = "e.g : 300000003225357") @PathVariable("OrderKey") String OrderKey,
 			Object order){
 	     return SalesOrderService.updateSaleOrder(order,OrderKey);  
 	}

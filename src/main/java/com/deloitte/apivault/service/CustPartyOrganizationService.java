@@ -28,6 +28,9 @@ public class CustPartyOrganizationService {
 
 	@Value("${customer.org.ep.create}")
 	String create;
+	
+	@Value("${customer.org.ep.findduplicate}")
+	String findduplicate;
 
 	@Value("${customer.org.ep.getall}")
 	String getall;
@@ -93,6 +96,27 @@ public class CustPartyOrganizationService {
 
 	}
 
+	public ResponseEntity<Object> findDuplicate(Object organization) {
+
+		logger.info("Entered find Duplicate");
+		logger.debug(host + findduplicate);
+		ResponseEntity<Object> response = null;
+		try {
+			response = this.webClient.post().uri(host + findduplicate).body(Mono.just(organization), Object.class).retrieve()
+					.toEntity(Object.class).block();
+			logger.debug(response.getBody().toString());
+		} catch (WebClientResponseException ex) {
+			logger.info("Error in findduplicate");
+			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
+		} catch (Exception ex) {
+			return new ResponseEntity<Object>("Error occured while finding duplicate",
+					HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		logger.info("completed createOrganization");
+		return response;
+
+	}
+	
 	public ResponseEntity<Object> getPartyNumber(String partyNumber) {
 
 		logger.info("Entered getPartyNumber");
@@ -139,7 +163,7 @@ public class CustPartyOrganizationService {
 		logger.debug(host + delete);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + delete, partyNumber).retrieve().toEntity(Object.class).block();
+			response = this.webClient.delete().uri(host + delete, partyNumber).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in deletePartyNumber");

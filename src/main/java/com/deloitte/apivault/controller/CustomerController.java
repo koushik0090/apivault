@@ -35,7 +35,7 @@ public class CustomerController {
 
 	@GetMapping("/accounts/{PartyNumber}")
 	public ResponseEntity<Object> getCustAccountByPartyNumber(
-			@Parameter(description = "e.g: 2008") @PathVariable("PartyNumber") String PartyNumber) {
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber) {
 		return customerAccountService.getCustAccountByPartyNumber(PartyNumber);
 	}
 
@@ -46,48 +46,48 @@ public class CustomerController {
 
 	@PatchMapping("/accounts/{PartyNumber}")
 	public ResponseEntity<Object> updateCustAccountByPartyNumber(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber,
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber,
 			@RequestBody Object customerAccount) {
 		return customerAccountService.updateCustAccountByPartyNumber(PartyNumber, customerAccount);
 	}
 
 	@DeleteMapping("/accounts/{PartyNumber}")
 	public ResponseEntity<Object> deleteCustAccountByPartyNumber(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber) {
+			@Parameter(description = "e.g: 59786") @PathVariable("PartyNumber") String PartyNumber) {
 		return customerAccountService.deleteCustAccountByPartyNumber(PartyNumber);
 	}
 
 	@GetMapping("/accounts/{PartyNumber}/child/Address")
 	public ResponseEntity<Object> getCustAddress(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber) {
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber) {
 		return customerAddressService.getCustAddress(PartyNumber);
 	}
 
 	@GetMapping("/accounts/{PartyNumber}/child/Address/{AddressNumber}")
 	public ResponseEntity<Object> getCustAddressByPartyNumber(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber,
-			@Parameter(description = "e.g: 123") @PathVariable("AddressNumber") String AddressNumber) {
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber,
+			@Parameter(description = "e.g: 3033") @PathVariable("AddressNumber") String AddressNumber) {
 		return customerAddressService.getCustAddressByPartyNumber(PartyNumber, AddressNumber);
 	}
 
 	@PostMapping("/accounts/{PartyNumber}/child/Address")
 	public ResponseEntity<Object> createCustAddress(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber,
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber,
 			@RequestBody Object customerAccount) {
 		return customerAddressService.createCustAddress(PartyNumber, customerAccount);
 	}
 
 	@PatchMapping("/accounts/{PartyNumber}/child/Address/{AddressNumber}")
 	public ResponseEntity<Object> updateCustAddressByPartyNumber(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber,
-			@Parameter(description = "e.g: 123") @PathVariable("AddressNumber") String AddressNumber,
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber,
+			@Parameter(description = "e.g: 3033") @PathVariable("AddressNumber") String AddressNumber,
 			@RequestBody Object customerAccount) {
 		return customerAddressService.updateCustAddressByPartyNumber(PartyNumber, AddressNumber, customerAccount);
 	}
 
 	@DeleteMapping("/accounts/{PartyNumber}/child/Address/{AddressNumber}")
 	public ResponseEntity<Object> deleteCustAddressByPartyNumber(
-			@Parameter(description = "e.g: 123") @PathVariable("PartyNumber") String PartyNumber,
+			@Parameter(description = "e.g: 5003") @PathVariable("PartyNumber") String PartyNumber,
 			@Parameter(description = "e.g: 123") @PathVariable("AddressNumber") String AddressNumber) {
 		return customerAddressService.deleteCustAddressByPartyNumber(PartyNumber, AddressNumber);
 	}

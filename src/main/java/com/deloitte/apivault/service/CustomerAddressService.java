@@ -75,7 +75,7 @@ public class CustomerAddressService {
 		logger.debug(host + getbyid);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + getall, PartyNumber, AddressNumber).retrieve()
+			response = this.webClient.get().uri(host + getbyid, PartyNumber, AddressNumber).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
@@ -135,7 +135,7 @@ public class CustomerAddressService {
 		logger.debug(host + delete);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + delete, PartyNumber, AddressNumber).retrieve()
+			response = this.webClient.delete().uri(host + delete, PartyNumber, AddressNumber).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {

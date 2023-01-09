@@ -51,6 +51,46 @@ public class CustPartyOrganizationController {
 		return custPartyOrganizationService.createOrganization(organization);
 	}
 	
+	//POST Organizations
+		@PostMapping("/hubOrganizations/duplicate")
+		public ResponseEntity<Object> findDuplicate(
+				@Parameter(description  = "e.g:\r\n\n"
+				        + "{\r\n"
+						+ "\r\n"
+						+ "  \"PartyNumber\" : \"7131021\",\r\n"
+						+ "\r\n"
+						+ "  \"SourceSystemReference\" : [ {\r\n"
+						+ "\r\n"
+						+ "    \"SourceSystem\" : \"CSV\",\r\n"
+						+ "\r\n"
+						+ "    \"SourceSystemReferenceValue\" : \"7131021\"\r\n"
+						+ "\r\n"
+						+ "  } ],\r\n"
+						+ "\r\n"
+						+ "  \"OrganizationName\" : \"ABC Inc.\",\r\n"
+						+ "\r\n"
+						+ "  \"PartyUsageCode\" : \"EXTERNAL_LEGAL_ENTITY\",\r\n"
+						+ "\r\n"
+						+ "  \"RawPhoneNumber\" : \"1234567\",\r\n"
+						+ "\r\n"
+						+ "  \"EmailAddress\" : \"xyz_xyz@gmail.com\",\r\n"
+						+ "\r\n"
+						+ "  \"CorpCurrencyCode\" : \"USD\",\r\n"
+						+ "\r\n"
+						+ "  \"CurcyConvRateType\" : \"Corporate\",\r\n"
+						+ "\r\n"
+						+ "  \"CurrencyCode\" : \"USD\",\r\n"
+						+ "\r\n"
+						+ "  \"DUNSNumber\" : \"\",\r\n"
+						+ "\r\n"
+						+ "  \"TaxpayerIdentificationNumber\" : \"\"\r\n"
+						+ "\r\n"
+						+ "}",required = true)
+		   	@RequestBody Object organization){
+			return custPartyOrganizationService.findDuplicate(organization);
+		}
+		
+	
 	//GET PartyNumber
 		@GetMapping("/hubOrganizations/{PartyNumber}")
 		public ResponseEntity<Object> getPartyNumber(
