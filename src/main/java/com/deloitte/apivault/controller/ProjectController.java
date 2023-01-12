@@ -45,7 +45,7 @@ public class ProjectController {
 	// Get worker project by ProjectId
 	@GetMapping("/projects/{ProjectId}")
 	public ResponseEntity<Object> getProjectById(
-			@Parameter(description = PayloadExample.getProjectId) @PathVariable("empsUniqID") String empsUniqID) {
+			@Parameter(description = PayloadExample.getProjectId) @PathVariable("ProjectId") String empsUniqID) {
 		return projectService.getProjectById(empsUniqID);
 	}
 
