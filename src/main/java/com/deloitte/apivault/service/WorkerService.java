@@ -15,113 +15,113 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import reactor.core.publisher.Mono;
 
 @Service
-public class EmployeeService {
+public class WorkerService {
 	
-	@Value("${employees.host}")
+	@Value("${workers.host}")
 	String host;
 	
-	@Value("${employees.basic.auth.user}")
+	@Value("${workers.basic.auth.user}")
 	String username;
 	
-	@Value("${employees.basic.auth.password}")
+	@Value("${workers.basic.auth.password}")
 	String password;
 	
-	@Value("${employees.ep.create}")
+	@Value("${workers.ep.create}")
 	String create;
 	
-	@Value("${employees.ep.getall}")
+	@Value("${workers.ep.getall}")
 	String getall;
 
-	@Value("${employees.ep.getbyid}")
+	@Value("${workers.ep.getbyid}")
 	String getbyid;
 	
-	@Value("${employees.ep.update}")
+	@Value("${workers.ep.update}")
 	String update;
 	
 	public WebClient webClient = null;
 	
-	private static final Logger logger = LoggerFactory.getLogger(EmployeeService.class);
+	private static final Logger logger = LoggerFactory.getLogger(WorkerService.class);
 
-	public EmployeeService(WebClient.Builder webClientBuilder) {
+	public WorkerService(WebClient.Builder webClientBuilder) {
 		this.webClient =  webClientBuilder
 				.filter(ExchangeFilterFunctions.basicAuthentication("MuleSoft.API", "Welcome@1"))
 				.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE).build();
 		
 	}
 
-	public ResponseEntity<Object> getEmp() {
-		logger.info("Entered getEmp");
+	public ResponseEntity<Object> getWorker() {
+		logger.info("Entered getWorker");
 		logger.debug(host + getall);
 		ResponseEntity<Object> response = null;
 		try {
 			 response  = this.webClient.get().uri(host + getall).retrieve().toEntity(Object.class).block();
 			 logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
-			logger.info("Error in getEmp");
+			logger.info("Error in getWorker");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
-			return new ResponseEntity<Object>("Error occured while fetching from getEmp",
+			return new ResponseEntity<Object>("Error occured while fetching from getWorker",
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		logger.info("completed getEmp");
+		logger.info("completed getWorker");
 		return response;
 	}
 
-	public ResponseEntity<Object> getEmpById(String empsUniqID) {
-		logger.info("Entered getEmpById");
+	public ResponseEntity<Object> getWorkerById(String PersonNumber) {
+		logger.info("Entered getWorkerById");
 		logger.debug(host + getbyid);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + getbyid, empsUniqID).retrieve().toEntity(Object.class).block();
+			response = this.webClient.get().uri(host + getbyid, PersonNumber).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
-			logger.info("Error in getEmpById");
+			logger.info("Error in getWorkerById");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
-			return new ResponseEntity<Object>("Error occured while fetching from  getEmpById",
+			return new ResponseEntity<Object>("Error occured while fetching from  getWorkerById",
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		logger.info("completed getEmpById");
+		logger.info("completed getWorkerById");
 		return response;
 	}
 
-	public ResponseEntity<Object> createEmp(Object employee) {
-		logger.info("Entered createEmp");
+	public ResponseEntity<Object> createWorker(Object worker) {
+		logger.info("Entered createWorker");
 		logger.debug(host + create);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + create).body(Mono.just(employee), Object.class).retrieve()
+			response = this.webClient.post().uri(host + create).body(Mono.just(worker), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
-			logger.info("Error in createEmp");
+			logger.info("Error in createWorker");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
-			return new ResponseEntity<Object>("Error occured while creating createEmp",
+			return new ResponseEntity<Object>("Error occured while creating createWorker",
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		logger.info("completed createEmp");
+		logger.info("completed createWorker");
 		return response;
 		
 	}
 
-	public ResponseEntity<Object> updateEmp(String empsUniqID,Object employee) {
-		logger.info("Entered updateEmp");
+	public ResponseEntity<Object> updateWorker(String PersonNumber,Object worker) {
+		logger.info("Entered updateWorker");
 		logger.debug(host + update);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.patch().uri(host + update,empsUniqID).body(Mono.just(employee), Object.class).retrieve()
+			response = this.webClient.patch().uri(host + update,PersonNumber).body(Mono.just(worker), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 			
 		} catch (WebClientResponseException ex) {
-			logger.info("Error in updateEmp");
+			logger.info("Error in updateWorker");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
 			return new ResponseEntity<Object>("Error occured while updating employee",
 					HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		logger.info("completed updateEmp");
+		logger.info("completed updateWorker");
 		return response;
 	}
 	

@@ -1,1 +1,269 @@
-[INFO ] 23-01-12 15:05  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 23-02-02 11:19  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 11:19  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 11:19  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 11:19  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 11:19  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 11:19  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 11:19  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 11:19  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 487 ms
+[INFO ] 23-02-02 11:19  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e365b8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@10eb60fb, org.springframework.security.web.header.HeaderWriterFilter@22ae8200, org.springframework.web.filter.CorsFilter@59fcdc41, org.springframework.security.web.authentication.logout.LogoutFilter@8c350fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d5d529b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5453f0aa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2456a552, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cfad1fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a92f8e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b8f2c9, org.springframework.security.web.session.SessionManagementFilter@49ecf073, org.springframework.security.web.access.ExceptionTranslationFilter@75d93e96, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63f6d09]
+[INFO ] 23-02-02 11:19  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 11:19  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 11:19  c.d.a.ApivaultApplication - Started ApivaultApplication in 1.217 seconds (JVM running for 50531.508)
+[INFO ] 23-02-02 11:19  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 23-02-02 11:20  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:20  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:20  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 23-02-02 11:20  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 366 ms
+[INFO ] 23-02-02 11:20  c.d.a.s.InvoiceService - Entered calculateTax
+[DEBUG] 23-02-02 11:20  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/calculateTax
+[INFO ] 23-02-02 11:20  c.d.a.s.InvoiceService - Error in calculateTax
+[INFO ] 23-02-02 11:21  c.d.a.s.InvoiceService - Entered calculateTax
+[DEBUG] 23-02-02 11:21  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/calculateTax
+[DEBUG] 23-02-02 11:21  c.d.a.s.InvoiceService - {result=The current action Calculate Tax has completed successfully.}
+[INFO ] 23-02-02 11:21  c.d.a.s.InvoiceService - completed calculateTax
+[INFO ] 23-02-02 11:27  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 11:27  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 11:27  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 11:27  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 11:27  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 11:27  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 11:27  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 11:27  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 400 ms
+[INFO ] 23-02-02 11:27  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2af0c2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@40b6d506, org.springframework.security.web.header.HeaderWriterFilter@56fa9491, org.springframework.web.filter.CorsFilter@6802669e, org.springframework.security.web.authentication.logout.LogoutFilter@3b653406, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49690c16, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1eb3db9c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@267c21a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48136fc3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a4f244c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@277490c0, org.springframework.security.web.session.SessionManagementFilter@279e66c7, org.springframework.security.web.access.ExceptionTranslationFilter@33576f5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5da27241]
+[INFO ] 23-02-02 11:27  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 11:27  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 11:27  c.d.a.ApivaultApplication - Started ApivaultApplication in 0.974 seconds (JVM running for 51019.323)
+[INFO ] 23-02-02 11:27  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 23-02-02 11:27  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:27  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:27  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 23-02-02 11:27  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 173 ms
+[INFO ] 23-02-02 11:28  c.d.a.s.InvoiceService - Entered cancelLine
+[DEBUG] 23-02-02 11:28  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelLine
+[INFO ] 23-02-02 11:28  c.d.a.s.InvoiceService - Error in cancelLine
+[INFO ] 23-02-02 11:28  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 11:28  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 11:28  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 11:29  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 11:29  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 11:29  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 11:29  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 11:29  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 579 ms
+[INFO ] 23-02-02 11:29  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56b8f7ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@33fae4d2, org.springframework.security.web.header.HeaderWriterFilter@60ffb874, org.springframework.web.filter.CorsFilter@33c6efd6, org.springframework.security.web.authentication.logout.LogoutFilter@6995a3e6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a909c8a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2544640f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@11f4f8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f56e2fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@277c57c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fc5f7e8, org.springframework.security.web.session.SessionManagementFilter@60b8f588, org.springframework.security.web.access.ExceptionTranslationFilter@1d4638d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33003d6e]
+[INFO ] 23-02-02 11:29  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 11:29  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 11:29  c.d.a.ApivaultApplication - Started ApivaultApplication in 1.335 seconds (JVM running for 51095.351)
+[INFO ] 23-02-02 11:29  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 23-02-02 11:29  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:29  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:29  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 23-02-02 11:29  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 207 ms
+[WARN ] 23-02-02 11:29  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 105]]
+[INFO ] 23-02-02 11:29  c.d.a.s.InvoiceService - Entered cancelLine
+[DEBUG] 23-02-02 11:29  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelLine
+[DEBUG] 23-02-02 11:29  c.d.a.s.InvoiceService - {result=The current action Cancel Invoice Line has completed successfully.}
+[INFO ] 23-02-02 11:29  c.d.a.s.InvoiceService - completed cancelLine
+[INFO ] 23-02-02 11:29  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 11:29  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 11:29  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 11:30  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 11:30  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 11:30  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 11:30  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 11:30  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 630 ms
+[INFO ] 23-02-02 11:30  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@136b6a72, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fba4872, org.springframework.security.web.header.HeaderWriterFilter@b9434a7, org.springframework.web.filter.CorsFilter@2886e100, org.springframework.security.web.authentication.logout.LogoutFilter@4aae61cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@346907c8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f860ab4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f436635, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c3e8954, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4625a978, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23687d52, org.springframework.security.web.session.SessionManagementFilter@3643f939, org.springframework.security.web.access.ExceptionTranslationFilter@7bdf1b1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43768885]
+[INFO ] 23-02-02 11:30  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 11:30  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 11:30  c.d.a.ApivaultApplication - Started ApivaultApplication in 1.711 seconds (JVM running for 51155.391)
+[INFO ] 23-02-02 11:30  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 23-02-02 11:30  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:30  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 23-02-02 11:30  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 23-02-02 11:30  c.d.a.s.InvoiceService - Entered cancelInvoice
+[DEBUG] 23-02-02 11:30  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelInvoice
+[INFO ] 23-02-02 11:30  c.d.a.s.InvoiceService - Entered cancelInvoice
+[DEBUG] 23-02-02 11:30  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/cancelInvoice
+[INFO ] 23-02-02 11:30  c.d.a.s.InvoiceService - Error in cancelInvoice
+[DEBUG] 23-02-02 11:30  c.d.a.s.InvoiceService - {result=The current action Cancel Invoice has completed successfully.}
+[INFO ] 23-02-02 11:30  c.d.a.s.InvoiceService - completed cancelInvoice
+[INFO ] 23-02-02 12:02  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 12:02  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 12:02  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 12:02  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 12:02  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 12:02  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 12:02  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 12:02  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 278 ms
+[INFO ] 23-02-02 12:02  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@679a8fb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@121a7d3b, org.springframework.security.web.header.HeaderWriterFilter@848492a, org.springframework.web.filter.CorsFilter@7ab4add2, org.springframework.security.web.authentication.logout.LogoutFilter@721c1819, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48380894, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@68a3e6ae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3589e85e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5621aee9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c6aac1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dfd3ad3, org.springframework.security.web.session.SessionManagementFilter@2ddb2cd9, org.springframework.security.web.access.ExceptionTranslationFilter@124ad6bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46313872]
+[INFO ] 23-02-02 12:02  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 12:02  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 12:02  c.d.a.ApivaultApplication - Started ApivaultApplication in 0.712 seconds (JVM running for 53093.927)
+[INFO ] 23-02-02 12:02  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 23-02-02 12:05  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 12:05  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 12:05  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 12:05  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 12:05  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 12:05  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 346 ms
+[WARN ] 23-02-02 12:05  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController': Unsatisfied dependency expressed through field 'invoiceService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardService - Stopping service [Tomcat]
+[INFO ] 23-02-02 12:05  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 23-02-02 12:05  o.s.b.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController': Unsatisfied dependency expressed through field 'invoiceService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.deloitte.apivault.ApivaultApplication.main(ApivaultApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 36 common frames omitted
+[INFO ] 23-02-02 12:05  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 29548 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 12:05  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 12:05  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 12:05  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 12:05  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 12:05  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 220 ms
+[WARN ] 23-02-02 12:05  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController': Unsatisfied dependency expressed through field 'invoiceService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+[INFO ] 23-02-02 12:05  o.a.c.c.StandardService - Stopping service [Tomcat]
+[INFO ] 23-02-02 12:05  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 23-02-02 12:05  o.s.b.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'invoiceController': Unsatisfied dependency expressed through field 'invoiceService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.deloitte.apivault.ApivaultApplication.main(ApivaultApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invoiceService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'invoice.payable.ep.validateInvoice' in value "${invoice.payable.ep.validateInvoice}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 36 common frames omitted
+[INFO ] 23-02-02 12:07  c.d.a.ApivaultApplication - Starting ApivaultApplication using Java 15.0.1 on USHYDKSAIKOUSH3 with PID 28792 (C:\Users\ksaikoushik\Desktop\api vault\apivault\target\classes started by ksaikoushik in C:\Users\ksaikoushik\Desktop\api vault\apivault)
+[DEBUG] 23-02-02 12:07  c.d.a.ApivaultApplication - Running with Spring Boot v2.6.7, Spring v5.3.19
+[INFO ] 23-02-02 12:07  c.d.a.ApivaultApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 23-02-02 12:07  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 23-02-02 12:07  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 23-02-02 12:07  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[INFO ] 23-02-02 12:07  o.a.c.c.StandardService - Starting service [Tomcat]
+[INFO ] 23-02-02 12:07  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.62]
+[INFO ] 23-02-02 12:07  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 23-02-02 12:07  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1447 ms
+[INFO ] 23-02-02 12:07  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b9875a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bfc55c2, org.springframework.security.web.header.HeaderWriterFilter@2962e8bc, org.springframework.web.filter.CorsFilter@778bd186, org.springframework.security.web.authentication.logout.LogoutFilter@161358d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b33c8ba, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@621ac065, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@55ec3592, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c2d2a0d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60be93b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f7730a9, org.springframework.security.web.session.SessionManagementFilter@3ef6c346, org.springframework.security.web.access.ExceptionTranslationFilter@4debe570, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@647c3608]
+[INFO ] 23-02-02 12:07  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 23-02-02 12:07  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[INFO ] 23-02-02 12:07  c.d.a.ApivaultApplication - Started ApivaultApplication in 3.797 seconds (JVM running for 4.571)
+[INFO ] 23-02-02 12:08  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 23-02-02 12:08  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 23-02-02 12:08  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 23-02-02 12:09  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 341 ms
+[INFO ] 23-02-02 12:09  c.d.a.s.InvoiceService - Entered validateInvoice
+[DEBUG] 23-02-02 12:09  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice
+[INFO ] 23-02-02 12:09  c.d.a.s.InvoiceService - Error in validateInvoice
+[INFO ] 23-02-02 12:18  c.d.a.s.InvoiceService - Entered validateInvoice
+[DEBUG] 23-02-02 12:18  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice
+[INFO ] 23-02-02 12:18  c.d.a.s.InvoiceService - Error in validateInvoice
+[INFO ] 23-02-02 12:18  c.d.a.s.InvoiceService - Entered validateInvoice
+[DEBUG] 23-02-02 12:18  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice
+[INFO ] 23-02-02 12:18  c.d.a.s.InvoiceService - Error in validateInvoice
+[INFO ] 23-02-02 12:24  c.d.a.s.InvoiceService - Entered validateInvoice
+[DEBUG] 23-02-02 12:24  c.d.a.s.InvoiceService - https://eiiv-dev11.fa.us6.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/invoices/action/validateInvoice

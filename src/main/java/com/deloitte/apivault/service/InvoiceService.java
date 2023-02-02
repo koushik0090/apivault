@@ -3,9 +3,7 @@ package com.deloitte.apivault.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.ExchangeFilterFunctions;
@@ -16,7 +14,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 public class InvoiceService {
-	
+
 	@Value("${invoice.payable.host}")
 	String host;
 
@@ -28,16 +26,19 @@ public class InvoiceService {
 
 	@Value("${invoice.payable.ep.create}")
 	String create;
-	
+
 	@Value("${invoice.payable.ep.applyprepayments}")
 	String applyprepayments;
-	
+
 	@Value("${invoice.payable.ep.calculateTax}")
 	String calculateTax;
-	
+
+	@Value("${invoice.payable.ep.validateInvoice}")
+	String validateInvoice;
+
 	@Value("${invoice.payable.ep.cancelInvoice}")
 	String cancelInvoice;
-	
+
 	@Value("${invoice.payable.ep.cancelLine}")
 	String cancelLine;
 
@@ -49,24 +50,24 @@ public class InvoiceService {
 
 	@Value("${invoice.payable.ep.update}")
 	String update;
-	
+
 	public WebClient webClient = null;
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(InvoiceService.class);
 
-	public  InvoiceService(WebClient.Builder webClientBuilder) {
-		
+	public InvoiceService(WebClient.Builder webClientBuilder) {
+
 		this.webClient = webClientBuilder
 				.filter(ExchangeFilterFunctions.basicAuthentication("MuleSoft.API", "Welcome@1"))
-				.defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE).build();
+				.defaultHeader("Content-Type", "application/vnd.oracle.adf.action+json").build();
 	}
-	
+
 	public ResponseEntity<Object> getAllInvoices() {
 		logger.info("Entered getAllInvoices");
 		logger.debug(host + getall);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + getall).retrieve().toEntity(Object.class).block();
+			response = webClient.get().uri(host + getall).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in getAllInvoices");
@@ -78,32 +79,31 @@ public class InvoiceService {
 		logger.info("completed getAllInvoices");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> createInvoice(Object invoice) {
 		logger.info("Entered createInvoice");
 		logger.debug(host + create);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + create).body(Mono.just(invoice), Object.class).retrieve()
+			response = webClient.post().uri(host + create).body(Mono.just(invoice), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in createInvoice");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
-			return new ResponseEntity<Object>("Error occured while creating Invoice",
-					HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<Object>("Error occured while creating Invoice", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		logger.info("completed createInvoice");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> applyPrepaymentsInvoice(Object invoice) {
 		logger.info("Entered applyPrepayments");
 		logger.debug(host + applyprepayments);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + applyprepayments).body(Mono.just(invoice), Object.class).retrieve()
+			response = webClient.post().uri(host + applyprepayments).body(Mono.just(invoice), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
@@ -116,13 +116,13 @@ public class InvoiceService {
 		logger.info("completed applyPrepayments");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> calculateTaxInvoice(Object invoice) {
 		logger.info("Entered calculateTax");
 		logger.debug(host + calculateTax);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + calculateTax).body(Mono.just(invoice), Object.class).retrieve()
+			response = webClient.post().uri(host + calculateTax).body(Mono.just(invoice), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
@@ -135,32 +135,31 @@ public class InvoiceService {
 		logger.info("completed calculateTax");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> cancelInvoice(Object invoice) {
 		logger.info("Entered cancelInvoice");
 		logger.debug(host + cancelInvoice);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + cancelInvoice).body(Mono.just(invoice), Object.class).retrieve()
+			response = webClient.post().uri(host + cancelInvoice).body(Mono.just(invoice), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in cancelInvoice");
 			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
 		} catch (Exception ex) {
-			return new ResponseEntity<Object>("Error occured while cancel Invoice",
-					HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<Object>("Error occured while cancel Invoice", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		logger.info("completed cancelInvoice");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> cancelLineInvoice(Object invoice) {
 		logger.info("Entered cancelLine");
 		logger.debug(host + cancelLine);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.post().uri(host + cancelLine).body(Mono.just(invoice), Object.class).retrieve()
+			response = webClient.post().uri(host + cancelLine).body(Mono.just(invoice), Object.class).retrieve()
 					.toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
@@ -173,13 +172,13 @@ public class InvoiceService {
 		logger.info("completed cancelLine");
 		return response;
 	}
-	
+
 	public ResponseEntity<Object> getInvoiceById(String invoicesUniqID) {
 		logger.info("Entered getInvoiceById");
 		logger.debug(host + getbyid);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.get().uri(host + getbyid, invoicesUniqID).retrieve().toEntity(Object.class).block();
+			response = webClient.get().uri(host + getbyid, invoicesUniqID).retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 		} catch (WebClientResponseException ex) {
 			logger.info("Error in getInvoiceById");
@@ -192,13 +191,12 @@ public class InvoiceService {
 		return response;
 	}
 
-
-	public ResponseEntity<Object> updateInvoice(String invoicesUniqID,Object invoice) {
+	public ResponseEntity<Object> updateInvoice(String invoicesUniqID, Object invoice) {
 		logger.info("Entered updateInvoice");
 		logger.debug(host + update);
 		ResponseEntity<Object> response = null;
 		try {
-			response = this.webClient.patch().uri(host + update, invoicesUniqID).body(Mono.just(invoice), Object.class)
+			response = webClient.patch().uri(host + update, invoicesUniqID).body(Mono.just(invoice), Object.class)
 					.retrieve().toEntity(Object.class).block();
 			logger.debug(response.getBody().toString());
 
@@ -209,6 +207,25 @@ public class InvoiceService {
 			return new ResponseEntity<Object>("Error occured while updating invoice", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		logger.info("completed updateInvoice");
+		return response;
+	}
+
+	public ResponseEntity<Object> validateInvoice(Object invoice) {
+		logger.info("Entered validateInvoice");
+		logger.debug(host + validateInvoice);
+		ResponseEntity<Object> response = null;
+		try {
+			response = webClient.post().uri(host + validateInvoice).body(Mono.just(invoice), Object.class).retrieve()
+					.toEntity(Object.class).block();
+			logger.debug(response.getBody().toString());
+		} catch (WebClientResponseException ex) {
+			logger.info("Error in validateInvoice");
+			return new ResponseEntity<Object>(ex.getResponseBodyAsString(), ex.getStatusCode());
+		} catch (Exception ex) {
+			return new ResponseEntity<Object>("Error occured while validating the Invoice",
+					HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		logger.info("completed validateInvoice");
 		return response;
 	}
 

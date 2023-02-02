@@ -10,25 +10,32 @@ public class PayloadExample {
 	
 	public static final String calculateTax = "e.g:\r\n\n"
 										    		+"{\r\n"
-													+ "	\"InvoiceNumber\": \"REST_Invoice\",\r\n"
-													+ "	\"BusinessUnit\": \"Vision Operations\",\r\n"
-													+ "	\"Supplier\": \"Advanced Network Devices\"\r\n"
-													+ "}";
+										    		+ "	\"InvoiceNumber\": \"9988776\",\r\n"
+										    		+ "	\"BusinessUnit\": \"Lookahead US BU\",\r\n"
+										    		+ "	\"Supplier\": \"Lookahead Test Supplier\"\r\n"
+										    		+ "}";
 	
 	public static final String cancelInvoice = "e.g:\r\n\n"
-										    		+"	{\r\n"
-													+ "		\"InvoiceNumber\": \"REST_Invoice\",\r\n"
-													+ "		\"BusinessUnit\": \"Vision Operations\",\r\n"
-													+ "		\"Supplier\": \"Advanced Network Devices\"\r\n"
-													+ "	}";
+										    		+"{\r\n"
+										    		+ "	\"InvoiceNumber\": \"9988776\",\r\n"
+										    		+ "	\"BusinessUnit\": \"Lookahead US BU\",\r\n"
+										    		+ "	\"Supplier\": \"Lookahead Test Supplier\"\r\n"
+										    		+ "}";
 	
 	public static final String cancelLineInvoice = "e.g:\r\n\n"
 											    		+"{\r\n"
-														+ "		\"InvoiceNumber\": \"REST_Invoice\",\r\n"
-														+ "		\"BusinessUnit\": \"Vision Operations\",\r\n"
-														+ "		\"Supplier\": \"Advanced Network Devices\",\r\n"
-														+ "		\"LineNumber\": 1\r\n"
-														+ "	}";
+											    		+ "	\"InvoiceNumber\": \"9988776\",\r\n"
+											    		+ "	\"BusinessUnit\": \"Lookahead US BU\",\r\n"
+											    		+ "	\"Supplier\": \"Lookahead Test Supplier\",\r\n"
+											    		+"	\"LineNumber\": 1"
+											    		+ "}";
+	
+	public static final String validateInvoice = "e.g:\r\n\n"
+											    		+"{\r\n"
+											    		+ "    \"InvoiceNumber\": \"12MAT\",\r\n"
+											    		+ "    \"BusinessUnit\": \"Lookahead US BU\",\r\n"
+											    		+ "    \"Supplier\": \"Lookahead Test Supplier\",\r\n"
+											    		+ "    \"ProcessAction\": \"Validate\"}";
 
     public static final String createInvoice = "e.g:\r\n\n"
                                                     +"{\r\n"
@@ -221,6 +228,57 @@ public class PayloadExample {
 															+ "    }\r\n"
 															+ "  ]\r\n"
 															+ "}";
+
+	public static final String createWorker = "e.g:\r\n\n"
+			                                        +"{\r\n"
+			                                        + "\r\n"
+			                                        + "      \"names\": [\r\n"
+			                                        + "\r\n"
+			                                        + "        {\r\n"
+			                                        + "\r\n"
+			                                        + "          \"LastName\": \"CloudAPIVault-1111\",\r\n"
+			                                        + "\r\n"
+			                                        + "          \"LegislationCode\": \"US\",\r\n"
+			                                        + "\r\n"
+			                                        + "          \"FirstName\": \"John\"\r\n"
+			                                        + "\r\n"
+			                                        + "        }\r\n"
+			                                        + "\r\n"
+			                                        + "      ],\r\n"
+			                                        + "\r\n"
+			                                        + "      \"DateOfBirth\": \"1987-01-01\",\r\n"
+			                                        + "\r\n"
+			                                        + "      \"workRelationships\": [\r\n"
+			                                        + "\r\n"
+			                                        + "        {\r\n"
+			                                        + "\r\n"
+			                                        + "          \"LegalEmployerName\": \"Lookahead US Corp.\",\r\n"
+			                                        + "\r\n"
+			                                        + "          \"WorkerType\": \"E\",\r\n"
+			                                        + "\r\n"
+			                                        + "          \"assignments\": [ \r\n"
+			                                        + "\r\n"
+			                                        + "            {\r\n"
+			                                        + "\r\n"
+			                                        + "              \"ActionCode\": \"HIRE\",\r\n"
+			                                        + "\r\n"
+			                                        + "              \"BusinessUnitName\": \"Lookahead US BU\"\r\n"
+			                                        + "\r\n"
+			                                        + "            }\r\n"
+			                                        + "\r\n"
+			                                        + "          ]\r\n"
+			                                        + "\r\n"
+			                                        + "        }\r\n"
+			                                        + "\r\n"
+			                                        + "      ]\r\n"
+			                                        + "\r\n"
+			                                        + "    }";
+
+	public static final String updateWorker = "e.g:\r\n\n" 
+			                                        +"{\r\n"
+			                                        + " \"DateOfBirth\": \"1987-01-01\",\r\n"
+			                                        + " \"CountryOfBirth\" : \"US\"\r\n"
+			                                        + " }";
 													
 	
 											

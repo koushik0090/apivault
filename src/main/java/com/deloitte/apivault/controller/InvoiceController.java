@@ -60,6 +60,13 @@ public class InvoiceController {
 			@Parameter(description = PayloadExample.cancelLineInvoice) @RequestBody Object invoice) {
 		return invoiceService.cancelLineInvoice(invoice);
 	}
+	
+	// validate Invoice
+		@PostMapping("/invoices/action/validateInvoice")
+		public ResponseEntity<Object> validateInvoice(
+				@Parameter(description = PayloadExample.validateInvoice) @RequestBody Object invoice) {
+			return invoiceService.validateInvoice(invoice);
+		}
 
 	// create invoice
 	@PostMapping("/invoices")
